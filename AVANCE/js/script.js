@@ -9,43 +9,6 @@ document.addEventListener('click', e => {
         $signUp.classList.toggle('active')
     }
 });
-
-document.getElementById("registro").addEventListener("click", function() {
-    window.location.href = "../index.html";
-});
-document.getElementById("iniciar").addEventListener("click", function() {
-    window.location.href = "../index.html";
-});
-function falabella() {
-    window.location.href = "https://www.falabella.com.co/falabella-co/product/119629528/Consola-Playstation-5-Edicion-Disco-Ps5-Cd-1-Ano-Garantia/119629529";
-}
-function linio() {
-    window.location.href = "https://www.linio.com.co/p/consola-xbox-series-s-qbut3j?qid=60cf4d371bd96c3dc011e9d2276e5e9a";
-}
-function linio2() {
-    window.location.href = "https://www.linio.com.co/p/apple-watch-series-7-45mm-gps-media-noche-original-garanti-a-1an-o-n2yr1x";
-}
-function redireccionFace() {
-    location.href = "https://www.facebook.com";
-}
-function redireccionGit() {
-    location.href = "https://www.github.com";
-}
-function redireccionInsta() {
-    location.href = "https://www.instagram.com";
-}
-function redireccionXboxLinio() {
-    location.href = "https://www.linio.com.co/p/xbox-series-s-512gb-qejg6g?qid=1f827363050d7ffae60d5987640df5b3&oid=MA219EL0VYGJNLCO&position=2&sku=MA219EL0VYGJNLCO&searchTerm=xbox%20series%20s%20consola";
-}
-function redireccionXboxAlkosto() {
-    location.href = "https://www.alkosto.com/consola-xbox-series-s-512-gb-1-control-inalambrico/p/889842651348";
-}
-function redireccionXboxExito() {
-    location.href = "https://www.exito.com/consola-series-s-xbox-rrs-00004-3001513/p";
-}
-function redireccionXboxFalabella() {
-    location.href = "https://www.falabella.com.co/falabella-co/product/9461744/Consola-Xbox-Series-S-512-GB/9461744";
-}
 function openTab(tabId) {
     const tabs = document.querySelectorAll('.tab-content');
     tabs.forEach(tab => {
@@ -55,4 +18,74 @@ function openTab(tabId) {
             tab.classList.remove('active');
         }
     });
+}
+
+const nombreRx = /^[a-zA-Z\s]+$/;
+const emailRx = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+const passwordRx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+function validarRegistro() {
+  const nombreInput = document.getElementById('nombre');
+  const emailInput = document.getElementById('mail');
+  const passwordInput = document.getElementById('password');
+
+  const nombre = nombreInput.value;
+  const email = emailInput.value;
+  const password = passwordInput.value;
+
+  if (!nombreRx.test(nombre)) {
+    alert('Ingrese un nombre válido.');
+    nombreInput.focus();
+    return false;
+  }
+  if (!emailRx.test(email)) {
+    alert('Ingrese una dirección de correo electrónico correcta.');
+    emailInput.focus();
+    return false;
+  }
+  if (!passwordRx.test(password)) {
+    alert('La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número.');
+    passwordInput.focus();
+    return false;
+  }
+  window.location.href = "../index.html";
+  return true;
+}
+
+function validarInicioSesion() {
+  const emailInput = document.getElementById('mails');
+  const passwordInput = document.getElementById('passwords');
+
+  const email = emailInput.value;
+  const password = passwordInput.value;
+
+  if (!emailRx.test(email)) {
+    alert('Por favor, ingresa una dirección de correo electrónico válida.');
+    emailInput.focus();
+    return false;
+  }
+
+  if (!passwordRx.test(password)) {
+    alert('La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número.');
+    passwordInput.focus();
+    return false;
+  }window.location.href = "../index.html";
+  return true;
+}
+
+
+document.getElementById('iniciar').addEventListener('click', validarRegistro);
+document.getElementById('registro').addEventListener('click', validarInicioSesion);
+
+function irAComprarx() {
+  var url = "https://www.exito.com/consola-xbox-series-x-1tb-microsoft-101154798-mp/p";
+  window.location.href = url;
+}
+function irAComprara() {
+  var url = "https://www.exito.com/watch-s7-41mm-gps-blanco-apple-mkmy3bea-3045064/p";
+  window.location.href = url;
+}
+function irAComprarp() {
+  var url = "https://www.exito.com/consola-playstation-5-2-controles-ps5-gow-ragnarok-fifa-23-cargador-dobe-102416909-mp/p";
+  window.location.href = url;
 }

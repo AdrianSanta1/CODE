@@ -337,7 +337,7 @@ section{
 .row img{
     width: 100%;
     height: auto;
-    align-items: ce;
+    align-items: center;
 }
 .precio h4{
     color: #111;
@@ -427,78 +427,7 @@ section{
     padding: 1%;
     margin-left: 7%;
 }
-.comparar {
-    width: 40%;
-    height: 30%;
-    margin-bottom: 5%;
-    display: inline-block;
-    padding: 1%;
-    margin-left: 7%;
-}
-.mejorPrecio{
-    width: 40%;
-    height: 30%;
-    margin-bottom: 5%;
-    display: inline-block;
-    padding: 1%;
-    margin-left: 7%;
-}
-.xbox {
-    width: 400px;
-    height: 300px;
-}
-.play{
-    width: 400px;
-    height: 300px;
-}
-.precioXbox{
-    text-align: center;
-    margin-top: 5%;
-}
-.precioPlay{
-    text-align: center;
-    margin-top: 5%;
-}
-.precioSeries{
-    text-align: center;
-    margin-top: 5%;
-}
-.series7{
-    width: 400px;
-    height: 300px;
-}
-.linio{
-    width: 105px;
-    height: 105px;  
-}
-.ktro{
-    width: 100px;
-    height: 100px; 
-}
-.alkosto{
-    width: 105px;
-    height: 105px;
-}
-.alkos{
-    width: 100px;
-    height: 100px;
-}
-.exito{
-    width: 105px;
-    height: 105px;
-}
-.exito1{
-    width: 100px;
-    height: 100px
-}
-.falabella{
-    width: 105px;
-    height: 105px;
-}
-.falabe{
-    width: 100px;
-    height: 100px;
-}
+
 .header-2{
     position: fixed;
     width: 100%;
@@ -558,6 +487,7 @@ section{
     padding: 10px;
     cursor: pointer;
     border: none;
+    margin: 13px;
     text-align: center;
 }
 .tab-content {
@@ -582,10 +512,28 @@ section{
 .parrafo1 a:hover {
     color: #0dff00; 
 }
+.parrafo3{
+    display: block;
+    color: #565656;
+    margin-right: 10px;
+    font-size: 20px;
+}
+h3{
+    display: block;
+    color: #565656;
+    margin-right: 10px;
+}
 .preciop {
     display: flex;
     align-items: center;
 }
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+}
+
 
 .precio img {
     max-width: 150px; 
@@ -593,7 +541,8 @@ section{
 }
 
 .product-text {
-    flex: 1; /
+    flex: 50%; 
+    margin: 100px;
 }
 .product-text p{
     margin-top: 201px;
@@ -630,6 +579,26 @@ section{
 .navmenu-watch a:hover{
     color: #003cff;
 }
+.main-ps5{
+    width: auto;
+    height: 40vh;
+    background-image: url(/img/bannerps5.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.navmenu-ps5 a{
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+
 .main-xbox{
     width: auto;
     height: 40vh;
@@ -666,4 +635,133 @@ section{
 }
 .main-btnx i{
     vertical-align: middle;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.especificaciones-titulo {
+    font-weight: bold;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.especificaciones {
+    font-weight: 500;
+    color: #333;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.especificaciones-subtitulo {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+}
+.box-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px #4b4949; 
+    overflow: hidden;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.chatbox {
+    margin-right: 20px;
+    text-align: right;
+}
+
+.chat-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.chat-message {
+    font-size: 16px;
+    margin: 0;
+    color: #777;
+}
+
+.chat-image {
+    max-width: 100px;
+    height: auto;
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+.box-container h4{
+    text-align: inherit;
+}
+.buy-button {
+    background-color: #06a8de; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 23px;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+  }
+  
+  .buy-button:hover {
+    background-color: #04a9f076; 
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #333; 
+    margin-top: 10px;
+  }
+  ul.navsite {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+ul.navsite li {
+    margin-right: 10px;
+}
+
+ul.navsite li:last-child {
+    margin-right: 0;
+}
+
+ul.navsite li img {
+    width: 100px; 
+    height: 100px;  
+    cursor: pointer;
 }

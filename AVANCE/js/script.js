@@ -89,3 +89,17 @@ function irAComprarp() {
   var url = "https://www.exito.com/consola-playstation-5-2-controles-ps5-gow-ragnarok-fifa-23-cargador-dobe-102416909-mp/p";
   window.location.href = url;
 }
+function irAComprarn() {
+  var url = "https://www.pepeganga.com/nevecon-no-frost-ge-profile-pql26pgkcss-mabe-pql26pgkcss/p";
+  window.location.href = url;
+}
+function irAComprart() {
+  var url = "https://vivelaera.com/producto/combo-tv-qled-4k-qn98q80ca-barra-hw-q930c/";
+  window.location.href = url;
+}
+function irAComprars() {
+  var url = "https://www.exito.com/lavadoras-secadora-22-kg-inox-samsung-wd22t6500gpco-3008077/p";
+  window.location.href = url;
+}
+
+
